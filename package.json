@@ -1,0 +1,21 @@
+{
+  "name": "leaf_innovation",
+  "version": "1.0.0",
+  "description": "for an online store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "rsr721996@gmail.com (Rahul Singh)",
+  "license": "ISC",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "morgan-body": "^2.4.5",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {}
+}
