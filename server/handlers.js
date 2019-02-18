@@ -33,7 +33,7 @@ exports.AddProducts = function(req, res){
 }
 
 exports.GetAgents = function(req, res){
-	db.GetAgents(function(err, docs){
+	db.GetAgents(null,null, function(err, docs){
 		if(err){
 			res.status(500)
 			return res.send('internal server error')
@@ -359,7 +359,7 @@ function ValidateRequest(docs, model, requiredParams){
 		for(let index in requiredParams){
 			var key = requiredParams[index]
 			var value = doc[key]
-			
+
 			if(value == null || value.length <= 0){
 				notFoundkey = key 
 				valid = false
